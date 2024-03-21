@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    background-color: #1e1d2b;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box; /* para que no se salga del contenedor */
+}
+/* css para el navegador*/
+nav { 
+    display: flex; 
+    flex-direction: row;
+    color: #ff702a;
+    font-family: "Poppins", sans-serif;
+    height: 80px;
+    width: 100%;
+}
+.margen{
+    padding: 20px 40px;
+}
+nav ul{
+    display: flex; 
+    flex-direction: row;
+    margin-left: auto;
+    justify-content: flex-end;
+    margin-right: 20px;
+
+}
+nav ul li{ 
+
+    line-height: 80px;
+    margin: 0 5px;
+    
+}
+nav ul li a{
+    
+    text-decoration: none;
+    color: white;
+    font-size: 15px ;
+    padding: 7px 13px;
+}
+
+li a.active, li a:hover{
+
+    border: 1px solid #12b886;
+    transition: .2s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    justify-content: flex-end;/* no sirve*/
+    line-height: 80px; /*centra la imagen */
+    margin-right: 10px; /*no funciona */
+    margin-left: auto ;
+    cursor: pointer; /* para que cambie la flechita*/
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/* pantalla menu */
+.primerapantalla{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    height: 650px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    align-items: center;
+
+}
+.primerapantalla .text  { 
+    color: #ff702a;
+    height: 50;
+    width: 35%;  
+}
+.primerapantalla .text .subtitulo{ 
+    color: white;
+    font-size: 150%;
+    height: 50;
+    width: 60%;    
+}
+.primerapantalla .text .titulo {
+    color: #ff702a;
+    font-size: 500%;  
+}
+.primerapantalla .imag{
+    margin-left: 80px;
+}
+.primerapantalla .imag img{   
+    height: auto;
+    width: 500px;
+}
+.primerapantalla img:hover{
+    scale: 1.1;
+    transition: 0.5s;
+}
+button{
+    background-color: #ff702a;
+    color: white;
+    padding: 10px ;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;   
+} 
+button:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    background-color: #f05507;
+    color: rgb(228, 188, 188);
+}
+
+ /* border: 10px solid wheat;*/
+
+ .segundapantalla{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    height: 750px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    align-items: center;
+
+}
+.segundapantalla .text  { 
+    color: #ff702a;
+    margin-left: 90px;
+    height: 50;
+    width: 35%;
+
+}
+.segundapantalla .text .subtitulo{ 
+    color: white;
+    font-size: 100%;
+    height: 50;
+    width: 60%;    
+}
+.segundapantalla .text .titulo {
+    color: white;
+    font-size: 300%;  
+}
+
+.segundapantalla .imag img {   
+    height: auto;
+    width: 500px;
+}
+.segundapantalla img:hover{
+    scale: 1.1;
+    transition: 0.5s;
+}
+/* tercer pantalla food menu */
+.tercerapantalla{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    height: 750px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    align-items: center;
+    /* border: 5px solid white; */
+}
+/* contenedor texto titulo de arriba*/
+.tercerapantalla .text  { 
+    color: white;
+    height: 50;
+    width: 100%; 
+    font-size: 300%;
+    text-align: center;
+    /* border: 5px solid white; */
+}
+.tercerapantalla .imagenes{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-around;
+  
+}
+/* contenedor foto texto*/
+.tercerapantalla .imagenes .cuadro { /* inicio cambios ...................*/
+    width: 25%;
+    background-color: antiquewhite;
+    padding: 0%;
+
+    
+}
+/* contenedor foto */
+.tercerapantalla .cuadro img{
+    display: flex;
+    background-color: antiquewhite;
+    height: auto;
+    width: 100%;
+    padding: 0% 10px;
+}
+
+/* contenedor carrito */
+.tercerapantalla .cuadro .carrito{
+    display: flex;
+    justify-content: flex-end;
+    background-color: antiquewhite;
+    padding-right: 10px;
+    
+}
+/* contenedor carrito imagen */
+.tercerapantalla .cuadro .carrito i{
+    background-color: #ff702a;
+    padding: 2%;
+    
+}
+/* contenedor texto*/
+.tercerapantalla .cuadro p{
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 70%;   
+}
+.tercerapantalla .cuadro .prime{
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 100%;
+}
+/* cuarta pantalla */
+.cuartapantalla{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    height: 750px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* contenedor texto titulo de arriba*/
+.cuartapantalla .text  { 
+    color: white;
+    height: 50;
+    width: 100%; 
+    font-size: 300%;
+    text-align: center;
+
+}
+.cuartapantalla .imageneservice{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-around;
+}
+
+/* contenedor foto texto*/
+.cuartapantalla .imageneservice .cuadro { 
+    padding: 0% ;
+    height: auto;
+    width: 25%;
+}
+/* contenedor foto */
+.cuartapantalla  .cuadro img{
+    display: flex;
+    height: auto;
+    width: 100%;
+    margin-bottom: 3%;
+
+}
+.cuartapantalla img:hover{
+    scale: 1.1;
+    transition: 0.5s;
+}
+/* contenedor texto*/
+.cuartapantalla .cuadro p{
+
+    text-align: center;
+    font-size: 100%; 
+    color: white; 
+    font-family: "Poppins", sans-serif;
+}
+.cuartapantalla .cuadro .prime{
+
+    text-align: center;
+    font-size: 150%;
+    color: #ff702a;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 2%;
+}
+
+.quintapantalla{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    height: 750px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.quintapantalla .subcont{
+
+    background-color: antiquewhite;
+    text-align: center;
+    height: 50%;
+    width: 80%;
+}
+.quintapantalla .subcont .text{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+
+}
+.quintapantalla .subcont .text .titulo {
+    background-color: antiquewhite;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 300%;
+    height: 70%;
+    width: 100%;   
+}
+.quintapantalla .subcont .text .titulo p {
+    background-color: antiquewhite;
+    height: 80%;
+    width: 60%;
+    font-size: 120%;
+    font-family: "poppin";
+ 
+}
+hr {
+    
+    border: 1px solid #ff702a; 
+    width: 25%;
+    margin: 4% 0% 4% 4%;
+}
+.sextapantalla{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    height: 400px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+.sextapantalla .text{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    justify-content: center;    
+}
+.sextapantalla .text .titulo{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column;
+    height: auto;
+    color: white;
+    width: 15%;
+    font-size: 15px;
+}
+.sextapantalla .text .titulo .principal{
+    height: auto;
+    color: white;
+    width: 100%;
+    font-size: 30px;     
+}
+.sextapantalla .titulo a {
+    text-decoration: none;
+    color: white;
+}
+.sextapantalla .cont {
+    width: 100%;
+    height: auto;  
+}
+
+.sextapantalla .cont i{
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    border-radius: 100%;
+    padding: 2%;
+    background-color: #ff702a;
+}
+
+
+
+/* para que el menu sea responsive*/
+@media (max-width: 900px){
+    .checkbtn{
+        display: block;   
+    }
+    nav{
+        position: fixed;
+    }
+    nav ul{
+        display: flex; 
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 50%;
+        background: #2c2b47;
+        top: 80px;
+        left: -100%;
+        text-align:center;
+        justify-content: center;
+        transition: all .5s;
+    }
+    nav ul li{ 
+        display: block;
+        background: #2c2b47;
+        line-height: 30px;
+        margin: 10px;
+        
+    }
+    nav ul li a{
+        background: #2c2b47;
+        font-size: 20px ;
+    }
+    li a.active, li a:hover{
+        background: none;
+        
+    }
+    #check:checked ~ ul{
+        left:0
+    }
+    /*primera pantalla para celular css para el home*/
+    .primerapantalla{
+        padding-top: 20%;
+        height: auto;
+    }
+    .primerapantalla .text  { 
+        text-align: center;
+        height: auto;
+        width: 100%;
+        font-size: 95%;  
+    }
+    .primerapantalla .text .subtitulo{
+        height: auto;
+        width: 100%; 
+    
+    }
+    .primerapantalla .imag {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .primerapantalla .imag img{  
+        margin-top: 15%; 
+        height: auto; 
+        width: 50%;
+    }
+    button{
+        margin-top: none;    
+    }
+     /*segunda pantalla para celular css para el about*/
+    .segundapantalla{
+        margin-top: 12%;
+    }
+    .segundapantalla .text  { 
+        text-align: center;
+        height: auto;
+        width: 100%;  
+        margin-left: 0;
+        font-size: 80%;
+        
+    }
+    .segundapantalla .text .subtitulo{ 
+        color: white;
+        font-size: 100%;
+        height: auto;
+        width: 100%; 
+        margin-top: 10%   
+    }
+   
+    .segundapantalla .imag {
+        order: 1;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .segundapantalla .imag img{   
+        height: auto;
+        width: 50%;
+    }
+
+    .tercerapantalla{
+        height: auto;
+    }
+    /* contenedor texto titulo de arriba*/
+    .tercerapantalla .text  {   
+        padding: 20% 2% 4%;
+        height: auto;
+        font-size: 200%;        
+    }
+    .tercerapantalla .imagenes{
+        flex-direction: column;
+        width: 60%;
+    }
+    .tercerapantalla .imagenes .cuadro { 
+        height: auto;
+        width: 100%;
+        margin-top: 17%;
+    }
+    .tercerapantalla .cuadro img{
+        padding: 0% ;
+        height: auto;
+        width: 100%;   
+    }
+    .tercerapantalla .cuadro .carrito{
+        padding-right: 3%;   
+    }
+    .tercerapantalla .cuadro p{
+        font-size: 60%;    
+    }
+    .tercerapantalla .cuadro .prime{
+        font-size: 90%;        
+    }
+    .cuartapantalla{
+        height: auto;
+
+    }
+    
+    /* contenedor texto titulo de arriba*/
+    .cuartapantalla .text  { 
+        margin-top: 16%;
+    }
+    .cuartapantalla .imageneservice{
+ 
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+    }
+    
+    /* contenedor foto texto*/
+    .cuartapantalla .imageneservice .cuadro { /* inicio cambios ...................*/
+        margin-top: 7%;
+        width: 60%;
+    }
+    .quintapantalla .subcont .text .titulo p {
+        height: 80%;
+        width: 80%;
+        font-size: 90%;   
+    }
+    .quintapantalla .subcont{
+        height: 40%;
+        width: 90%;
+    }
+    .sextapantalla{
+     
+        height: 400px;
+    
+        font-family: "Poppins", sans-serif;
+    }
+    .sextapantalla .text{
+         
+        flex-direction: column;
+
+        padding-left: 10%;
+    }
+    .sextapantalla .text .titulo{
+        width: 100%;
+        margin-top: 7%;
+    }
+
+    .sextapantalla .cont {
+
+        margin-bottom: 8%;
+    }
+   
+}
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
